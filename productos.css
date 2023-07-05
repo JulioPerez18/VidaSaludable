@@ -1,0 +1,204 @@
+body {
+    margin: 0px;
+  }
+  /*navbar*/
+  .nav-container {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: #1b1b1b;
+  }
+  
+  .navbar-logo {
+    justify-self: start;
+    margin-left: 20px;
+    color: #fff;
+    margin-top: 4vh;
+    cursor: pointer;
+  }
+  
+  .ver-carrito {
+    display: flex;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+.Subtitulocompra{
+  text-align: center;
+  margin-top: 3%;
+  font-family: 'Poppins', sans-serif;
+
+  }
+  
+  /*product cards*/
+  .shop-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 60px;
+  
+  }
+  .card {
+   margin:10px 100px 100px 0;
+   text-align: center;
+   padding:4%;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   outline: .1rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+   border-radius: 30px;
+  }
+  .card:hover{
+    outline: .2rem solid #222;
+    outline-offset: 0;
+
+  }
+  
+  .card > img {
+    border-radius: 100%;
+    width: 90%;
+    height: 250px;
+  }
+  
+  .card > img:hover {
+    transform: scale(.9);
+   
+  }
+
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: white;
+    background-color:#000000;
+    text-align: center;
+    cursor: pointer;
+    width: 60%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  
+  /*modal content*/
+  .modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: #fff;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*for the top*/
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+  }
+  
+  .modal-container::-webkit-scrollbar {
+    display: none;
+  }
+  .modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .modal-header-title {
+    justify-self: start;
+  }
+  
+  .modal-header-button {
+    cursor: pointer;
+  }
+  
+  .modal-container > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+  }
+  
+  .modal-container > div > img {
+    height: 120px;
+    width: 120px;
+  }
+  
+  .total-content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  /*se agregaron unas lineas de css con media querys para que se adapte mejor al responsive :)*/
+  
+  @media only screen and (max-width: 750px) {
+    .modal-container {
+      width: 100%;
+      margin: 0;
+      min-height: 88vh;
+    }
+  
+    .modal-container > .modal-content {
+      justify-content: space-between;
+      width: 100%;
+      margin: 2px;
+    }
+  
+    .modal-container > div > img {
+      height: 80px;
+      width: 80px;
+    }
+  }
+  
+  /*delete button product*/
+  .delete-product {
+    cursor: pointer;
+  }
+  
+  /*CarritoCounter*/
+  .cantidad-carrito {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    margin-top: 0%;
+    right: 14px;
+    position: absolute;
+    display: none;
+  }
+  
+  .sumar {
+    cursor: pointer;
+  }
+  
+  .restar {
+    cursor: pointer;
+  }
