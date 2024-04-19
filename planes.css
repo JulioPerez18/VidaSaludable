@@ -1,0 +1,110 @@
+.text-center{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;  
+    font-size: 300%;
+    color:#1c7a2c;
+}
+.princing{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.card-wrapper{
+    border: none;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 14px rgba(0,  0,0, 0.25),0 5px 5px rgba(0, 0, 0, 0.22) ;
+     padding: 2rem;
+     margin:1rem ;
+     transform: all 0.2s ease-in;
+}
+.card-wrapper:hover{
+    transform: scale(1.1) ;
+    transition: 1s;
+}
+.card-header{
+    margin-top: 0%;
+    text-align: center;  
+}
+.card-wrapper:hover .card-wrapper>h2{
+    transform: scale( 1.1);
+    color: aqua;
+    letter-spacing: 2;
+    font-family: 'Poppins', sans-serif;  
+}
+.card-header >img{
+    border-radius: 30px;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.card-detail{
+    width: 100%;
+}
+.card-detail >p{
+    padding: 0.6rem 1.5rem;
+    font-size: 12px;
+    border-bottom: 1px solid #d5d5d5;
+    font-family: 'Poppins', sans-serif;  
+}
+.check{
+    color: #1c7a2c;
+}
+.nocheck{
+    color: #ec615b;
+}
+.card-detail >p:hover{
+    background-color: white;
+}
+.card-price{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+.card-price >p > sup,
+.card-price >p > sub{
+    font-size: 1rem;
+}
+.card-button-comprar{
+    width: 100%;
+    height: 40px;
+     border: 2px solid #000000;
+     background-color: #000000;
+     color: #fff;
+     border-radius: 30px;
+     cursor: pointer;
+     transition: all 50ms ease-in ;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.card-button-comprar:hover{
+    border: 2px solid green;
+    background-color: transparent;
+    color: green;
+    font-weight: 800;
+    transition: 0.5s;
+}
+.txt-detalles{
+    font-family: 'Poppins', sans-serif;  
+    font-size: 10px;
+    color: #696d6a;
+    margin-top: 5px;
+}
+.descripcion{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;  
+    color: #1b803f;
+    margin-top: 20px;
+}
+.plan{
+    font-family: 'Poppins', sans-serif;  
+}
